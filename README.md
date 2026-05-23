@@ -223,8 +223,8 @@ if __name__ == "__main__":
 ```
   Your Application
   ┌────────────────────────────────────────────────────────────────┐
-  │  @Rise(retryOn = {TransientException.class})                   │
-  │  public void processOrder(@RisePayload OrderRequest order) {   │
+  │  @Lazarus(retryOn = {TransientException.class})                   │
+  │  public void processOrder(@LazarusPayload OrderRequest order) {   │
   │      // fails after 3 retries                                  │
   │  }                    │                                        │
   └───────────────────────┼────────────────────────────────────────┘
